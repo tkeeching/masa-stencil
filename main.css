@@ -48,6 +48,10 @@
     align-items: center;
     position: relative;
     margin: 0;
+    color: rgb(75, 75, 75);
+}
+
+.char.highlight {
     color: white;
 }
 
@@ -57,10 +61,18 @@
     font-size: 1.2cm;
 }
 
+.faces-23 .char.highlight {
+    text-shadow: 0 0 .3cm white;
+}
+
 .faces-50 .char {
-    width: 2.8cm;
-    height: 4.8cm;
-    font-size: 2.4cm;
+    width: 3cm;
+    height: 5.1cm;
+    font-size: 2.6cm;
+}
+
+.faces-50 .char.highlight {
+    text-shadow: 0 0 .5cm white;
 }
 
 .tick {
