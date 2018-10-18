@@ -2,22 +2,26 @@
     box-sizing: border-box;
 }
 
-p {
+.description {
+    margin-top: 2cm;
+    text-align: center;
 }
 
-body {
+.faces {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    zoom: .5;
 }
 
 .face {
     margin: 1cm;
 }
 
-.face h2 {
+.face h3 {
     text-align: center;
     font-size: 2cm;
-    margin: 0;
+    margin: .5cm;
 }
 
 .background {
@@ -25,42 +29,48 @@ body {
     justify-content: center;
     align-items: center;
     background: black;
-    height: 23cm;
-    width: 23cm;
-    padding: 3cm;
 }
 
-.letters {
-    width: 100%;
-    height: 100%;
-    color: white;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    position: relative;
+.faces-23 .background {
+    height: 23cm;
+    width: 23cm;
+}
+
+.faces-50 .background {
+    height: 50cm;
+    width: 50cm;
 }
 
 .line {
     display: flex;
-    justify-content: space-between;
-    flex-grow: 1;
 }
 
 .char {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1cm;
     position: relative;
-    font-size: 1.2cm;
     margin: 0;
+    color: white;
+}
+
+.faces-23 .char {
+    width: 1.4cm;
+    height: 2.3cm;
+    font-size: 1.2cm;
+}
+
+.faces-50 .char {
+    width: 2.8cm;
+    height: 4.8cm;
+    font-size: 2.4cm;
 }
 
 .tick {
     position: absolute;
-    left: 118%;
+    right: 0;
+    width: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 0;
 }
